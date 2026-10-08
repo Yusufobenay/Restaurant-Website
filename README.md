@@ -16,4 +16,4 @@ GitHub'dan hazır bir restoran şablonu alıp baştan sona inceledim. Kodları �
 - HTML5
 - CSS3
 - Bootstrap 4
--
+
