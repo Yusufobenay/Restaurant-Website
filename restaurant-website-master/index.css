@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fdfdfd;
+}
+
+/* Navigasyon */
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-flex-row li {
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: color 0.25s ease;
+}
+
+.nav-flex-row li a:hover {
+    color: #ffd166;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.section-intro {
+    height: 820px;
+    background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4.5em;
+    font-weight: 700;
+    font-family: 'Big Shoulders Text', cursive;
+    letter-spacing: 2px;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 8px 22px;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #333333;
+    text-decoration: none;
+}
+
+/* Hakkımızda & Şefin Önerisi */
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 60px 30px;
+}
+
+.special-offer {
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.about-section p {
+    font-family: inherit;
+    font-size: 1.05em;
+    text-transform: none;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+/* Menü */
+.menu-section {
+    background-color: #f4f5f7;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-title {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2.6em;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Resimli Menü Kartları */
+.menu-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.menu-card-img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover .menu-card-img {
+    transform: scale(1.05);
+}
+
+.menu-card-body {
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.menu-card h4 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.7em;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.menu-card .ingredients {
+    color: #666;
+    font-size: 14px;
+    min-height: 42px;
+    margin-bottom: 15px;
+}
+
+.menu-card .price {
+    font-weight: 700;
+    font-size: 1.35em;
+    color: #2c3e50;
+}
+
+/* Slider */
+.carousel-inner {
+    max-height: 600px;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 600px;
+}
+
+/* Rezervasyon & Bilgi Alanı */
+.reservation-section {
+    background-color: #ffffff;
+}
+
+.reservation-box {
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.reservation-box h3 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.form-desc {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #333333;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 15px;
+    letter-spacing: 1.5px;
+    border: 0;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #555555;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    height: 45px;
+}
+
+.form-control:focus {
+    border-color: #333333;
+    box-shadow: none;
+}
+
+/* Küçük Bilgi Kutuları (Cards) */
+.info-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.info-card h4 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 8px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #f0f0f0;
+    font-size: 14px;
+}
+
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.hours-list .day {
+    color: #555;
+    font-weight: 500;
+}
+
+.hours-list .time {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.contact-details p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.main-footer {
+    padding: 24px 15px;
+    background-color: #1a1a1a;
+    color: #888888;
+    font-size: 14px;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-intro {
+        height: 450px;
+    }
+    .section-intro h1 {
+        font-size: 3em;
+    }
+    .about-section p, .about-section h3 {
+        width: 90%;
+    }
+    .carousel-inner, .carousel-inner img {
+        height: 350px;
+    }
+}
