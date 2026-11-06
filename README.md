@@ -2,7 +2,7 @@
 
 Bu proje, modern bir restoran işletmesi için kullanıcı deneyimi (UX) ön planda tutularak tasarlanmış, Bootstrap 4 altyapısı üzerine özel CSS mimarisi inşa edilerek geliştirilmiş responsif bir web arayüzü çalışmasıdır.
 
-🔗 **[Projeyi Canlı İncele](https://yusufobenay.github.io/Restaurant-Website/)**
+🔗 **[Projeyi Canlı İncele](https://yusufobenay.github.io/Restaurant-Website/restaurant-website-master/)**
 *(Not: Canlı önizleme için GitHub Pages ayarlarından 'main' branch'i aktifleştirilmiştir.)*
 
 ## 🎥 Proje Görünümü
